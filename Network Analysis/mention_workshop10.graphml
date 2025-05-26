@@ -6,12 +6,12 @@
   <key id="d0" for="node" attr.name="community_louvain" attr.type="long" />
   <graph edgedefault="directed">
     <node id="@LoueBlack">
-      <data key="d0">1</data>
+      <data key="d0">0</data>
       <data key="d1">0</data>
       <data key="d2">1.0</data>
     </node>
     <node id="k">
-      <data key="d0">1</data>
+      <data key="d0">0</data>
       <data key="d1">0</data>
       <data key="d2">1.0</data>
     </node>
@@ -26,12 +26,12 @@
       <data key="d2">0.08</data>
     </node>
     <node id="@theunknowncomic9047">
-      <data key="d0">4</data>
+      <data key="d0">5</data>
       <data key="d1">2</data>
       <data key="d2">0.0</data>
     </node>
     <node id="KLWWorldNews">
-      <data key="d0">4</data>
+      <data key="d0">5</data>
       <data key="d1">2</data>
       <data key="d2">0.0</data>
     </node>
@@ -53,45 +53,45 @@
     <node id="p0ns">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.1</data>
+      <data key="d2">0.06</data>
     </node>
     <node id="r">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.06</data>
+      <data key="d2">0.04</data>
     </node>
     <node id="inian">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.14</data>
+      <data key="d2">0.06</data>
     </node>
     <node id="st">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.1</data>
+      <data key="d2">0.06</data>
     </node>
     <node id="ine">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.02</data>
+      <data key="d2">0.06</data>
     </node>
     <node id="lest1ne">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.12</data>
+      <data key="d2">0.14</data>
     </node>
     <node id="tes">
       <data key="d0">8</data>
       <data key="d1">4</data>
-      <data key="d2">0.08</data>
+      <data key="d2">0.14</data>
     </node>
     <node id="@tarlkoroban3733">
-      <data key="d0">16</data>
+      <data key="d0">17</data>
       <data key="d1">5</data>
       <data key="d2">0.0</data>
     </node>
     <node id="el">
-      <data key="d0">16</data>
+      <data key="d0">17</data>
       <data key="d1">5</data>
       <data key="d2">0.0</data>
     </node>
@@ -106,12 +106,12 @@
       <data key="d2">0.0</data>
     </node>
     <node id="@CRAZYHORSE187">
-      <data key="d0">20</data>
+      <data key="d0">21</data>
       <data key="d1">7</data>
       <data key="d2">0.0</data>
     </node>
     <node id="2min">
-      <data key="d0">20</data>
+      <data key="d0">21</data>
       <data key="d1">7</data>
       <data key="d2">0.0</data>
     </node>
@@ -136,12 +136,12 @@
       <data key="d2">1.0</data>
     </node>
     <node id="@AdalbertSchneider_">
-      <data key="d0">17</data>
+      <data key="d0">16</data>
       <data key="d1">10</data>
       <data key="d2">0.0</data>
     </node>
     <node id="UNITED24">
-      <data key="d0">17</data>
+      <data key="d0">16</data>
       <data key="d1">10</data>
       <data key="d2">0.0</data>
     </node>
@@ -156,22 +156,22 @@
       <data key="d2">0.0</data>
     </node>
     <node id="@fmate7109">
-      <data key="d0">21</data>
+      <data key="d0">20</data>
       <data key="d1">12</data>
       <data key="d2">0.0</data>
     </node>
     <node id="3">
-      <data key="d0">21</data>
+      <data key="d0">20</data>
       <data key="d1">12</data>
       <data key="d2">0.0</data>
     </node>
     <node id="@mustafaengin9322">
-      <data key="d0">0</data>
+      <data key="d0">1</data>
       <data key="d1">13</data>
       <data key="d2">0.0</data>
     </node>
     <node id="FoodwaysDistrubition">
-      <data key="d0">0</data>
+      <data key="d0">1</data>
       <data key="d1">13</data>
       <data key="d2">0.0</data>
     </node>
@@ -186,17 +186,17 @@
       <data key="d2">0.0</data>
     </node>
     <node id="@basem23">
-      <data key="d0">1</data>
+      <data key="d0">0</data>
       <data key="d1">0</data>
       <data key="d2">0.0</data>
     </node>
     <node id="@Bob252-z4x">
-      <data key="d0">5</data>
+      <data key="d0">4</data>
       <data key="d1">15</data>
       <data key="d2">0.0</data>
     </node>
     <node id="4">
-      <data key="d0">5</data>
+      <data key="d0">4</data>
       <data key="d1">15</data>
       <data key="d2">0.0</data>
     </node>
