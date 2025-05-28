@@ -3,11 +3,10 @@ from googleapiclient.errors import HttpError
 import json
 import csv
 
-# --- CONFIG ---
 YOUTUBE_API_KEY = "AIzaSyCN6wQYBpsjSEYtkbVWhCSNnuWQOJo2NQY"
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
-# --- 1. Search Videos ---
+# Search Videos
 def search_videos(query, max_results=50):
     search_response = youtube.search().list(
         q=query,
@@ -19,7 +18,7 @@ def search_videos(query, max_results=50):
     ).execute()
     return [item['id']['videoId'] for item in search_response['items']]
 
-# --- 2. Get Video Details ---
+# Get Video Details
 def get_video_details(video_ids):
     videos_data = []
     for i in range(0, len(video_ids), 50):  
@@ -48,7 +47,7 @@ def get_video_details(video_ids):
                 videos_data.append(video_info)
     return videos_data
 
-# --- 3. Get Comments ---
+# Get Comments
 def get_comments(video_id):
     comments = []
     try:
@@ -73,7 +72,7 @@ def get_comments(video_id):
         print(f"Error for video {video_id}: {e}")
     return comments
 
-# --- 4. Save CSV ---
+# Save CSV
 def save_to_csv(video_data, file_name="youtube_video_war_data.csv"):
     with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=video_data[0].keys())
@@ -81,16 +80,11 @@ def save_to_csv(video_data, file_name="youtube_video_war_data.csv"):
         for row in video_data:
             writer.writerow(row)
 
-# --- 5. Main Execution ---
 if __name__ == "__main__":
     query = "RussiaVsUkraine"
     video_ids = search_videos(query, max_results=50)
     filtered_videos = get_video_details(video_ids)
-
-    # Save metadata
     save_to_csv(filtered_videos)
-
-    # Save comments
     all_comments = {}
     for vid in filtered_videos:
         print(f"Fetching comments for: {vid['videoId']}")
