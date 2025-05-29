@@ -4,11 +4,8 @@ import csv
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-# === CONFIG ===
 YOUTUBE_API_KEY = "AIzaSyCN6wQYBpsjSEYtkbVWhCSNnuWQOJo2NQY"
 REGION_CODE = "US" 
-# You can either list specific video IDs or search by channel/keyword:
-# 2. Search query and number of videos to fetch
 SEARCH_QUERY = "Russia Ukraine war"
 MAX_RESULTS  = 100
 CSV_OUTPUT    = "D:\\Data Science\\Semester 3\\Social Media and Networks\\Assignment 2\\Social-Media-A2\\youtube_comments.csv"
