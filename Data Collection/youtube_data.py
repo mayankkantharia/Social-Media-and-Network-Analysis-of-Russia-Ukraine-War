@@ -1,9 +1,21 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import json
 import csv
 
-YOUTUBE_API_KEY = "AIzaSyCN6wQYBpsjSEYtkbVWhCSNnuWQOJo2NQY"
+# Load environment variables (from .env if present)
+load_dotenv()
+
+# Get API key from environment
+YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY")
+if not YOUTUBE_API_KEY:
+    raise RuntimeError(
+        "YOUTUBE_API_KEY is not set. Add it to a .env file or export it in your environment."
+    )
+
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
 # Search Videos

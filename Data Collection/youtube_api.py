@@ -1,10 +1,21 @@
+import os
 import json
 import time
 import csv
+from pathlib import Path
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from dotenv import load_dotenv
 
-YOUTUBE_API_KEY = "AIzaSyCN6wQYBpsjSEYtkbVWhCSNnuWQOJo2NQY"
+# Load environment from repository root .env (if present)
+load_dotenv()
+
+# Read YouTube API key from environment
+YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY")
+if not YOUTUBE_API_KEY:
+    raise RuntimeError(
+        "YOUTUBE_API_KEY is not set. Add it to a .env file or export it in your environment."
+    )
 REGION_CODE = "US" 
 SEARCH_QUERY = "Russia Ukraine war"
 MAX_RESULTS  = 100
